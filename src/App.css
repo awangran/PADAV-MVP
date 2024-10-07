@@ -57,3 +57,24 @@ button:hover{
   font-size:70px;
   color:#3EA4DC;
 }
+
+.saldo{
+  background-color: #060D15;
+  padding:0px 8px;
+  width:50%;
+  border-radius:10px;
+  color: #95acd0;
+}
+
+.svg{
+  width:70px;
+}
+
+.buttons-pay{
+  display:flex;
+  flex-direction:column;
+}
+.buttons-pay button{
+  width: 300px;
+  margin-top:10px;
+}
