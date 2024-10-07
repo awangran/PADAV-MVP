@@ -86,7 +86,7 @@ const Recarga = () => {
 
           <div className="buttons-pay">
             <button onClick={() => setisOpen(true)}>
-              <img className="svg" src='src/assets/nequi.svg'></img>
+              <img className="svg" src='src/public/nequi.svg'></img>
             </button>
 
             {pagosList}
