@@ -3,6 +3,7 @@ import { useState } from "react";
 import Logout from "../components/Logout";
 import Nequi from "../components/Nequi";
 import NuevoPago from "../components/NuevoPago";
+import Navbar from "../components/Navbar";
 
 const Recarga = () => {
   const [numero, setNumero] = useState("0");
@@ -64,6 +65,8 @@ const Recarga = () => {
          <input placeholder="# tarjeta" onChange={(e) => setTarjeta(e.target.value)}/>
         <button onClick={changeComp} style=              {{marginTop:'10px', backgroundColor:'#3EA4DC',                             color:'white', marginTop:'20px'
                                                           }}>Buscar</button>
+        <Navbar />                                           
+
        </div> 
 
         <div id="recarga2" style={recargaStyle2}>
@@ -95,10 +98,8 @@ const Recarga = () => {
           {isOpen && <Nequi numero={numero} setisOpen={setisOpen} setNumero={setNumero} /> }
           {isOpenPago && <NuevoPago setisOpen={setisOpen} setisOpenPago={setisOpenPago} pagosList={pagosList} setpagosList={setpagosList} />}
           
-          
+           <Navbar />                                           
         </div>
-      
-      
       
 
 

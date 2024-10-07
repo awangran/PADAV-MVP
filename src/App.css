@@ -110,3 +110,17 @@ input{
   transition: .3s;
 }
 
+.navbar{
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  min-width: 100vw;
+  justify-content: space-around;
+  display: flex;
+  background-color: #060D15;
+}
+
+.navbar i {
+  font-size: 25px;
+  color: #95acd0;
+}
