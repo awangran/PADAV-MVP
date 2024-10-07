@@ -45,7 +45,7 @@ button{
 }
 
 button:hover{
-  transition: .3s,
+  transition: .3s;
   background-color: #95acd0;
 }
 
@@ -113,8 +113,7 @@ input{
 .navbar{
   position: absolute;
   bottom: 0;
-  padding: 10px;
-  min-width: 100vw;
+  width: 100vw;
   justify-content: space-around;
   display: flex;
   background-color: #060D15;
@@ -123,6 +122,7 @@ input{
 .navbar i {
   font-size: 25px;
   color: #95acd0;
+  padding: 10px;
 }
 
 .mapa {
@@ -142,5 +142,39 @@ input{
   margin: 0px 20px;
   padding: 15px;
   flex-direction: column;
+}
 
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarjetaContainer{
+  background: rgb(6,13,21);
+  background: linear-gradient(177deg, rgba(6,13,21,1) 0%, rgba(35,76,123,1) 100%);
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 7px 10px 7px #6971799e; 
+
+}
+
+.signal{
+  transform: rotate(90deg);
+  color: #95acd0;
+  font-size: 30px;
+  position: absolute;
+  right: 40px;
+}
+
+.qr{
+  color: #95acd0;
+  font-size: 30px;
+ 
+}
+
+.row{
+  width: 100%;
+  text-align: right;
 }

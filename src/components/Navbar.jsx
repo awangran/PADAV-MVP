@@ -5,15 +5,15 @@ function Navbar() {
   return (
     <div className='navbar'>
         <Link to='/Recarga'>
-            <i class="fa-solid fa-dollar-sign navicon"></i>
+            <i className="fa-solid fa-dollar-sign navicon"></i>
         </Link>
 
         <Link to='/Mapa'>
-            <i class="fa-solid fa-location-dot navicon"></i>
+            <i className="fa-solid fa-location-dot navicon"></i>
         </Link>
 
         <Link to='/Tarjeta'>
-            <i class="fa-regular fa-credit-card navicons"></i>
+            <i className="fa-regular fa-credit-card navicons"></i>
         </Link>
     </div>
   )
