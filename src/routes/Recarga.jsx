@@ -46,11 +46,16 @@ const Recarga = () => {
         
       <div id="recarga1" style={recargaStyle}>
          <h1>Recarga</h1>
-         <button>Acerca tu tarjeta</button>
-         <h3>o</h3>
-         <h3>Ingresa el numero de tu tarjeta manualmente</h3>
+         <button style={{
+        backgroundColor:'#060D15',
+        width:'200px',
+        color:'#F5F5F5'
+         }}>Acerca tu tarjeta</button>
+         <p style={{color:'#060D15'}}>o</p>
+         <p style={{color:'#060D15'}}>Ingresa el numero de tu tarjeta <br></br> manualmente</p>
          <input placeholder="# tarjeta" onChange={(e) => setTarjeta(e.target.value)}/>
-        <button onClick={changeComp} style={{marginTop:'10px'}}>Buscar</button>
+        <button onClick={changeComp} style=              {{marginTop:'10px', backgroundColor:'#3EA4DC',                             color:'white', marginTop:'20px'
+                                                          }}>Buscar</button>
        </div> 
 
         <div id="recarga2" style={recargaStyle2}>

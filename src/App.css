@@ -78,3 +78,8 @@ button:hover{
   width: 300px;
   margin-top:10px;
 }
+input{
+  border:none;
+  border-radius:10px;
+  padding:8px 10px;
+}
