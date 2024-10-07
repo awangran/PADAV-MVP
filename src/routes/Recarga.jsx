@@ -1,10 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import Logout from "../components/Logout";
+import Nequi from "../components/Nequi";
+import NuevoPago from "../components/NuevoPago";
 
 const Recarga = () => {
   const [numero, setNumero] = useState("0");
   const [tarjeta, setTarjeta] = useState("0");
+
+  const [isOpen, setisOpen] = useState(false);
+  const [isOpenPago, setisOpenPago] = useState(false);
+
+  const [pagosList, setpagosList] = useState([]);
+
 
 
   const recargaStyle = {
@@ -74,14 +82,19 @@ const Recarga = () => {
             </div>
 
           <div className="buttons-pay">
-            <button>
+            <button onClick={() => setisOpen(true)}>
               <img className="svg" src='src/assets/nequi.svg'></img>
             </button>
+
+            {pagosList}
             
-            <button>
+            <button onClick={() => setisOpenPago(true)}>
               <p>Nuevo método de pago +</p>
             </button>
           </div>
+          {isOpen && <Nequi numero={numero} setisOpen={setisOpen} setNumero={setNumero} /> }
+          {isOpenPago && <NuevoPago setisOpen={setisOpen} setisOpenPago={setisOpenPago} pagosList={pagosList} setpagosList={setpagosList} />}
+          
           
         </div>
       
