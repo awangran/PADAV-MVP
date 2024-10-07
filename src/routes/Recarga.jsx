@@ -63,7 +63,7 @@ const Recarga = () => {
          <p style={{color:'#060D15'}}>o</p>
          <p style={{color:'#060D15'}}>Ingresa el numero de tu tarjeta <br></br> manualmente</p>
          <input placeholder="# tarjeta" onChange={(e) => setTarjeta(e.target.value)}/>
-        <button onClick={changeComp} style=              {{marginTop:'10px', backgroundColor:'#3EA4DC',                             color:'white', marginTop:'20px'
+        <button onClick={changeComp} style=              {{backgroundColor:'#3EA4DC',                             color:'white', marginTop:'20px'
                                                           }}>Buscar</button>
         <Navbar />                                           
 
